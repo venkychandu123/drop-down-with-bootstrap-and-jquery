@@ -1,56 +1,42 @@
-ul{
-    margin: 0px auto;
-    padding: 0px;
-    list-style: none;
-}
 
-li {
-    width: 15%;
-    float: left;
-    background: black;
-    padding: 10px 14px;
-    text-align: center;
-   
+
+.nav-bar {
+    margin: 0px;/*removing default margin*/
+    padding: 0px;/*removing default padding*/
+    list-style: none;/*removing default dots*/
+    background: black;/*adding the background color  to nav-nar*/
+    width: 0px;
+    height: 100%;/*for enter page */
+    overflow: hidden;
+    transition: 0.5s;/*changes css property value given periodic time*/
+    position: fixed;/*position of the element */
+    top: 0px;
+    left: 0px;
+    padding-top: 30px;
 }
-li:last-child {
-    display: none;
+li {
+   
+    padding: 10px 12px;
+    color: blanchedalmond;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+a:hover{
+    text-decoration: none;
 }
 a {
     color: white;
 }
-li:first-child {
-background: green;
+.fixied-header {
+    width: 160px;
 }
-@media screen and (max-width: 600px) {
-    .nav-bar {
-        position: relative;
-    }
-    
-li:not(:first-child){
-    display: none;
-}
-li:last-child {
-    display: block;
-    float: right;
-    width: auto;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-a:last-child {
+
+/* cancel icon */
+.fa-times {
     color: white;
-}
-li {
-    background: aquamarine;
-    display: block;
-    width: 100%;
-    text-align: inherit;
-}
-.res-bar li {
-    display: block;
-    float: none;
-}
-.nav-bar li:not(:first-child):not(:last-child) {
-    display: none;
-}
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
