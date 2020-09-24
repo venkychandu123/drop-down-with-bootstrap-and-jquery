@@ -12,11 +12,28 @@
             $(this).parent().addClass('nav-bar');
         }
     }
-});*/
+});
 
 $('body').on('click','.icon-button',function(){
-    $(this).prev().css('width','160px')
+    $(this).prev().css('height','100%');
+  
 });
 $('.fa-times').click(function(){
-   $(this).parent().css('width','0px');
+   $(this).parent().css('height','0%');
+ 
 });
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 1550) { //get the current position o fthe window 
+        $('.naresh').css('bottom','0px');
+      } else {
+        $('.naresh').css('bottom','-50px');
+      }
+    });
+    var a=$('.naa').scroll().offset.top;
+    console.log(a);
+    var b=$('.aaaa').scroll().offset.top;
+    console.log(b);
+  });*/
+
