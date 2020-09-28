@@ -1,13 +1,12 @@
-.drop-down-list {
+/*.drop-down-list {
     display: none;
-    
 }
-.drop-down:hover .drop-down-list  {
-display: block;
+ .drop-down-list  {
 background:blue;
 position: absolute;
     top: 30px;
     width: 300px;
+    overflow: scroll;
 }
 
 .drop-down {
@@ -26,4 +25,21 @@ height: 30px;
 a:hover {
     text-decoration: none;
     background: cadetblue;
+}
+
+*/
+
+ul{
+    list-style: none;
+    width: 350px;
+}
+.select {
+    border: 1px solid;
+}
+li{
+display: none;
+}
+.d-value {
+    border: 2px solid red;
+    height: 40px;
 }
